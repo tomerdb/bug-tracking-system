@@ -1,0 +1,112 @@
+﻿<Page x:Class="Telhai.CS.DotNet.ItamarErez.TomerHarari.UI.BugsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:local="clr-namespace:Telhai.CS.DotNet.ItamarErez.TomerHarari.UI"
+      mc:Ignorable="d"
+      Loaded="Page_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="67*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <TextBox Name="TitleTextBox" Margin="10">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="TextBox">
+                                            <Border Background="{TemplateBinding Background}" 
+                                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                                    BorderThickness="{TemplateBinding BorderThickness}">
+                                                <Grid>
+                                                    <TextBlock Text="Enter bug title" Margin="5,2" Foreground="Gray"/>
+                                                    <ScrollViewer x:Name="PART_ContentHost" Margin="5,2" />
+                                                </Grid>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+
+            <TextBox Name="DescriptionTextBox" Margin="10" Height="60" TextWrapping="Wrap" AcceptsReturn="True">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="TextBox">
+                                            <Border Background="{TemplateBinding Background}" 
+                                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                                    BorderThickness="{TemplateBinding BorderThickness}">
+                                                <Grid>
+                                                    <TextBlock Text="Enter bug description" Margin="5,2" Foreground="Gray"/>
+                                                    <ScrollViewer x:Name="PART_ContentHost" Margin="5,2" />
+                                                </Grid>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+
+            <TextBox Name="StatusTextBox" Margin="10">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="TextBox">
+                                            <Border Background="{TemplateBinding Background}" 
+                                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                                    BorderThickness="{TemplateBinding BorderThickness}">
+                                                <Grid>
+                                                    <TextBlock Text="Enter bug status" Margin="5,2" Foreground="Gray"/>
+                                                    <ScrollViewer x:Name="PART_ContentHost" Margin="5,2" />
+                                                </Grid>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+
+            <Label Name="BugCategoryLabel" Content="Bug category" Margin="10"/>
+            <ComboBox Name="BugCategory" Margin="10"/>
+
+            <Button Name="BtnAdd" Content="Add bug" Margin="10" Click="BtnAdd_Click" 
+                    Background="#FF4CAF50" Foreground="White" Height="30"/>
+            <Button Name="BtnUpdate" Content="Update bug" Margin="10" Click="BtnUpdate_Click"
+                    Background="#FF2196F3" Foreground="White" Height="30"/>
+            <Button Name="BtnDelete" Content="Delete bug" Margin="10" Click="BtnDelete_Click"
+                    Background="#FFF44336" Foreground="White" Height="30"/>
+        </StackPanel>
+
+        <ListView Name="BugsListView" Grid.Column="1" Margin="10" MinWidth="600">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Title" DisplayMemberBinding="{Binding Title}" Width="200"/>
+                    <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" Width="250"/>
+                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}" Width="150"/>
+                    <GridViewColumn Header="Category" DisplayMemberBinding="{Binding CategoryHierarchy}" Width="250"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

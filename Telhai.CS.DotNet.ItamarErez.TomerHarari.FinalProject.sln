@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telhai.CS.DotNet.ItamarErez.TomerHarari.Repositories", "Telhai.CS.DotNet.ItamarErez.TomerHarari.Repositories\Telhai.CS.DotNet.ItamarErez.TomerHarari.Repositories.csproj", "{30504196-DE68-44EB-814B-178127E68A80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telhai.CS.DotNet.ItamarErez.TomerHarari.API", "Telhai.CS.DotNet.ItamarErez.TomerHarari.API\Telhai.CS.DotNet.ItamarErez.TomerHarari.API.csproj", "{9E0FC50F-1F64-4F6F-B31A-AF76FAB6DD32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telhai.CS.DotNet.ItamarErez.TomerHarari.UI", "Telhai.CS.DotNet.ItamarErez.TomerHarari.UI\Telhai.CS.DotNet.ItamarErez.TomerHarari.UI.csproj", "{1F04194E-CC7A-472D-BBE1-D211EDA75FFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{4DCDB6B0-C8A5-4EFB-B687-11086304B6A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{84A73F53-8966-4E17-BB7E-05A809C345AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telhai.CS.DotNet.ItamarErez.TomerHarari.Factories", "Telhai.CS.DotNet.ItamarErez.TomerHarari.Factories\Telhai.CS.DotNet.ItamarErez.TomerHarari.Factories.csproj", "{D640A518-687A-4074-9110-DE7772CF7C15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30504196-DE68-44EB-814B-178127E68A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30504196-DE68-44EB-814B-178127E68A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30504196-DE68-44EB-814B-178127E68A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30504196-DE68-44EB-814B-178127E68A80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0FC50F-1F64-4F6F-B31A-AF76FAB6DD32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0FC50F-1F64-4F6F-B31A-AF76FAB6DD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0FC50F-1F64-4F6F-B31A-AF76FAB6DD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0FC50F-1F64-4F6F-B31A-AF76FAB6DD32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F04194E-CC7A-472D-BBE1-D211EDA75FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F04194E-CC7A-472D-BBE1-D211EDA75FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F04194E-CC7A-472D-BBE1-D211EDA75FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F04194E-CC7A-472D-BBE1-D211EDA75FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D640A518-687A-4074-9110-DE7772CF7C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D640A518-687A-4074-9110-DE7772CF7C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D640A518-687A-4074-9110-DE7772CF7C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D640A518-687A-4074-9110-DE7772CF7C15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30504196-DE68-44EB-814B-178127E68A80} = {84A73F53-8966-4E17-BB7E-05A809C345AE}
+		{9E0FC50F-1F64-4F6F-B31A-AF76FAB6DD32} = {84A73F53-8966-4E17-BB7E-05A809C345AE}
+		{1F04194E-CC7A-472D-BBE1-D211EDA75FFB} = {4DCDB6B0-C8A5-4EFB-B687-11086304B6A5}
+		{D640A518-687A-4074-9110-DE7772CF7C15} = {84A73F53-8966-4E17-BB7E-05A809C345AE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A6781AE-3273-4E7A-86F8-23AD488DA6D6}
+	EndGlobalSection
+EndGlobal
