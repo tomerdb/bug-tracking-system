@@ -59,7 +59,7 @@ The project supports two storage options:
 
 ### SQL Server Storage (Default)
 In `App.xaml.cs`:
-	   Replace `YOUR-SERVER` with your SQL Server instance name (e.g., "DESKTOP-ABC123" or "localhost").
+	   IServiceFactory serviceFactory = APIServiceFactory.Instance;
 
 ### JSON File Storage
 In `App.xaml.cs`:
