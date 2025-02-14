@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Telhai.CS.DotNet.ItamarErez.TomerHarari.Repositories\Telhai.CS.DotNet.ItamarErez.TomerHarari.Repositories.csproj" />
+    <ProjectReference Include="..\Telhai.CS.DotNet.ItamarErez.TomerHarari.API\Telhai.CS.DotNet.ItamarErez.TomerHarari.API.csproj" />
   </ItemGroup>
 
 </Project>

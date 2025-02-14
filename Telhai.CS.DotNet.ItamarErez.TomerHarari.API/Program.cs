@@ -19,7 +19,7 @@ foreach (var controller in controllerTypes)
 
 // Add services
 builder.Services.AddControllers()
-    .AddApplicationPart(Assembly.GetExecutingAssembly());  // Add this line
+    .AddApplicationPart(Assembly.GetExecutingAssembly());
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

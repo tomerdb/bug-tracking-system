@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Telhai.CS.DotNet.ItamarErez.TomerHarari.Repositories.Models;
 using Telhai.CS.DotNet.ItamarErez.TomerHarari.Repositories.Reposotories;
 
-namespace Telhai.CS.DotNet.ItamarErez.API2.Controllers
+namespace Telhai.CS.DotNet.ItamarErez.TomerHarari.API.Controllers
 {
     /// <summary>
     /// API controller for managing bugs.
